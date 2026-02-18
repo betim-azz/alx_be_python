@@ -15,10 +15,10 @@ def main():
 
         if unit == "C":
             converted = convert_to_fahrenheit(temp_input)
-            print(f"{temp_input}°C is {converted}°F")
+            print(f"{temp_input:.1f}°C is {converted:.2f}°F")
         elif unit == "F":
             converted = convert_to_celsius(temp_input)
-            print(f"{temp_input}°F is {converted}°C")
+            print(f"{temp_input:.1f}°F is {converted:.2f}°C")
         else:
             print("Invalid unit. Please enter C or F.")
     except ValueError:
@@ -26,3 +26,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
